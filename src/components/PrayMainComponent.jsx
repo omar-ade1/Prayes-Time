@@ -43,6 +43,7 @@ const countryInfo_Redux = useSelector((state) => state.CountryInfo);
     <>
       
       <div className="flex py-[100px] min-h-[80vh] justify-center flex-col">
+        <h1 className="w-fit mx-auto text-2xl text-white font-bold mb-5 bg-blue-500 p-3 rounded">عرض مواقيت الصلاة</h1>
         <TitleAndInfoPray
           /*
           {1} date_1 => التاريخ الهجري

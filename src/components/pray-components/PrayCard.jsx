@@ -5,9 +5,9 @@
 const PrayCard = ({name,time,image}) => {
   
   return (
-    <div className="" title={name}>
-      <div className="relative flex flex-col rounded-xl bg-white">
-        <div className="relative m-0 overflow-hidden rounded">
+    <div className="rounded-xl border border-blue-500 overflow-hidden shadow-md shadow-blue-500" title={name}>
+      <div className="relative flex flex-col bg-white">
+        <div className="relative m-0 overflow-hidden">
           <img className="h-[220px] w-full object-cover"
             src={image} alt={name}
           />

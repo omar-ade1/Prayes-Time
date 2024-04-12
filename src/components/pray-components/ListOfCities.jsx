@@ -154,11 +154,13 @@ const ListOfCities = ({ country, allData }) => {
             setIsSearchInCoun(false);
             setApiError("");
           }}
-          placeholder="ابحث عن دولتك"
+          placeholder="الدولة بالانجليزية"
           type="text"
           className="p-2 text-xl border-2 rounded focus:outline-none focus:border-red-600"
         />
-        <button
+        <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 1.1 }}
           className="bg-red-600 text-white font-bold text-xl p-2 w-[150px] mx-5 rounded"
           onClick={() => {
             if (handleFilter() == undefined) {
@@ -170,7 +172,7 @@ const ListOfCities = ({ country, allData }) => {
           }}
         >
           استمر
-        </button>
+        </motion.button>
       </div>
 
       {country && (
@@ -198,7 +200,7 @@ const ListOfCities = ({ country, allData }) => {
                 className="p-2 text-xl border-2 rounded focus:outline-none focus:border-red-600"
                 type="text"
                 list="city-list"
-                placeholder="ابحث عن مدينتك"
+                placeholder="المدينة بالانجليزية"
               />
               <datalist id="city-list">
                 {citiesOfChoosedCountry.map((c, index) => {
